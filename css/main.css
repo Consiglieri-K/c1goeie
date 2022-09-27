@@ -86,6 +86,8 @@ textarea {
 /* ==========================================================================
   / Author's custom styles
    ========================================================================== */
+   
+   /* HEADER */
    *{
     padding: 0;
     margin: 0;
@@ -96,6 +98,10 @@ textarea {
   }
   body{
     font-family: Fellix,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  header{
+    position: sticky;
+    top: 0;
   }
   nav{
     background: #24252A;
@@ -125,7 +131,7 @@ textarea {
     border-radius: 3px;
     text-transform: uppercase;
   }
-  a.active,a:hover{
+  #navelement.active,#navelement:hover{
     background: #69197c;
     transition: .5s;
   }
@@ -150,7 +156,7 @@ textarea {
       font-size: 16px;
     }
   }
-  @media (max-width: 858px){
+  @media (max-width: 1358px){
     .checkbtn{
       display: block;
     }
@@ -172,7 +178,7 @@ textarea {
     nav ul li a{
       font-size: 20px;
     }
-    a:hover,a.active{
+    #navelement:hover,#navelement.active{
       background: none;
       color: #69197c;
     }
@@ -187,7 +193,101 @@ textarea {
   }
 
 
+/* MAIN */
 
+/* vakken */
+main{
+  background-color: rgb(88, 88, 88);
+}
+
+.mainItem{
+  max-width: 80%;
+  display: flex;
+  margin: auto;
+  background: rgb(108, 108, 108);
+  padding: 2%;
+}
+
+@media (max-width: 1358px){
+  .mainItem{
+    display: block;
+  }
+}
+
+.mainItem h2{
+  color: #69197c;
+}
+
+.itemBox{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(65, 65, 65);
+  margin: 2%;
+}
+
+.itemBox,.itemImage{
+  padding: 2%;
+}
+
+.itemImage{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 556px){
+  .itemImage img{
+    height: 10px;
+  }
+  .roosterImage img{
+    height: 100px;
+  }
+}
+
+.itemImage img{
+  height: 70px;
+}
+
+.itemText p{
+  padding: 1%;
+  color:white
+}
+
+/* rooster */
+.roosterImage img{
+  height: 500px;
+}
+
+/* SCROLLBAR */
+
+
+
+
+.scroll-div{
+  color: #69197c;
+}
+
+
+/* FOOTER */
+footer{
+  background: #24252A;
+  height: 100%;
+  position: sticky;
+  bottom: 0;
+}
+
+.footerBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px;
+  color: white;
+}
+
+/* ROOSTER */
+
+.rooster img{
+  height: 500px;
+}
 
 /* ==========================================================================
   Helper classes
