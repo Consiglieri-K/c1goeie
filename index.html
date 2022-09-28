@@ -21,22 +21,25 @@
                 <i class="fas fa-bars"></i>
             </label>
             <label class="logo">CURIO</label>
-            <ul>
-                <li><a class="active" href="#" id="navelement">Home</a></li>
-                <li><a href="vakken" id="navelement">Vakken</a></li>
-                <li><a href="#" id="navelement">Rooster</a></li>
-                <li><a href="#" id="navelement">Versneld-traject</a></li>
-                <li><a href="#" id="navelement">Docenten</a></li>
+            <ul id="home">
+                <li><a class="active" href="#home" id="navelement">Home</a></li>
+                <li><a href="#vakken" id="navelement">Vakken</a></li>
+                <li><a href="#rooster" id="navelement">Rooster</a></li>
+                <li><a href="#versneld" id="navelement">Versneld-traject</a></li>
+                <li><a href="#docenten" id="navelement">Docenten</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div class="homeItem">
+            <h1 id="home">Welkom bij de opleiding Software development</h1>
+        </div>
         <div class="mainItem">
             <h1 id="vakken">VAKKEN</h1>
             <div class="itemBox">
                 <div class="itemText">
                     <h2>NATIVE</h2>
-                    <p>Bij native development leer je hoe je programma's gaat maken voor Windows systemen. Je leert applicaties maken door middel van onder andere c# en python.</p>
+                    <p>Bij native development leer je hoe je kunt programmeren voor Windows apparaten. Je leert onder andere de talen Python en C#. Op onze school maken we gebruik van Visual Studio, dat is een programmaomgeving waarin we programmeren. Hierin kan je met verschillende codetalen werken en daar maken we ook de applicaties mee. In het eerste jaar maken we vooral kleine programma’s die bestanden kunnen lezen en data kunnen gebruiken.</p>
                 </div>
                 <div class="itemImage">
                     <a><img src="img/vslogo.png" alt="vsstudio"></a>
@@ -47,12 +50,59 @@
             <div class="itemBox">
                 <div class="itemText">
                     <h2>WEB</h2>
-                    <p>Bij native development leer je hoe je programma's gaat maken voor Windows systemen. Je leert applicaties maken door middel van onder andere c# en python.</p>
+                    <p>Tijdens de web development lessen leer je websites en webapplicaties maken. In het eerste blok leer je vooral front-end development, dat houdt in dat je met de voorkant van de website bezig bent (design), dit doen we met HTML en CSS. In het verloop van de opleiding komt er ook steeds meer back-end bij, hierbij moet je denken aan het koppelen van databases en externe informatie aan je front-end. Dit doen we met PHP en SQL. Je krijgt in dit vak veel vrijheid, bij elke opdracht mag je zelf bepalen hoe jij het gaat aanpakken.</p>
                 </div>
                 <div class="itemImage">
-                    <a><img src="img/vslogo.png" alt="vsstudio"></a>
-                    <a><img src="img/python.png" alt="python"></a>
-                    <a><img src="img/windows.png" alt="windowslogo"></a>
+                    <a><img src="img/php.png" alt="php-logo"></a>
+                    <a><img src="img/html.png" alt="html"></a>
+                    <a><img src="img/sql.png" alt="sql"></a>
+                    <a><img src="img/css.png" alt="css"></a>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="itemText">
+                    <h2>PRA</h2>
+                    <p>Bij praktijkwerk bootsen we het echte programmeursleven na. Bij elke opdracht geeft een fictieve “werkgever” jou een opdracht, die gaan we meestal maken in groepen (net zoals in het echt).
+                        De opdrachten zijn erg verschillend en kunnen native based, web based of allebei zijn. Het is vooral de bedoeling dat je jou kennis laat zien bij dit vak.
+                        </p>
+                </div>
+                <div class="itemImage">
+                    <a><img src="img/code.png" alt="code-logo"></a>
+                    <a><img src="img/group.png" alt="group-logo"></a>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="itemText">
+                    <h2>Algo</h2>
+                    <p>Het vak Algoritme gaat over de gedachtegang van het programmeren. Ongeacht welke taal je gebruikt is de gedachtegang bijna overal hetzelfde. Bij dit vak brainstorm je hoe je jouw gedachtes omzet in code. Dit is een erg belangrijk aspect die je moet beheersen als programmeur.</p>
+                </div>
+                <div class="itemImage">
+                    <a><img src="img/php.png" alt="php-logo"></a>
+                    <a><img src="img/mindset.png" alt="mindset-logo"></a>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="itemText">
+                    <h2>PRO</h2>
+                    <p> 
+                        Hier leer je alles wat een programmeur doet buiten het programmeren zelf. Je leert onder andere hoe projecten werken in de industrie en wat voor soort methodes er zijn om een project aan te pakken.
+                        Denk hierbij aan de planning, deadlines, presenteren, opleveren etc.
+                    </p>
+                </div>
+                <div class="itemImage">
+                    <a><img src="img/project.png" alt="php-logo"></a>
+                    <a><img src="img/kanban.png" alt="kanban-logo"></a>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="itemText">
+                    <h2>KERNVAKKEN</h2>
+                    <p>PRO 
+                        Op deze opleiding krijg je ook kernvakken omdat er in het bedrijfsleven van je verwacht wordt dat je dit beheerst. 
+                        </p>
+                </div>
+                <div class="itemImage">
+                    <a><img src="img/kernvakken.jpg" alt="php-logo"></a>
                 </div>
             </div>
         </div>
@@ -65,6 +115,86 @@
                 <div class="roosterImage">
                     <a><img src="img/rooster.png" alt="rooster"></a>
                 </div>
+            </div>
+        </div>
+        <div class="mainItem">
+            <h1 id="versneld">VERSNELD TRAJECT</h1>
+            <div class="itemBox">
+                <div class="itemText">
+                    <p>Op deze school word je aan het einde van elk blok beoordeeld. Je kan worden beoordeeld met drie "kleuren": groen, oranje of rood. Groen betekent dat je alles keurig hebt gedaan in het blok, oranje betekent dat ze niet weten of je de stof goed beheerst en rood betekent dat je niet over mag gaan. Wanneer je na blok A groen hebt dan kun je ervoor kiezen om het "versnelde traject" te doen. Wanneer je dit kiest dan doe je de opleiding in 3 jaar in plaats van 4, en ga je sneller door de stof heen. Leer jij erg snel, dan is dit misschien wel voor jou.</p>
+                </div>
+                <div class="itemImage">
+                </div>
+            </div>
+        </div>
+        
+        <div class="mainItem">
+            <h1 id="docenten">DOCENTEN</h1>
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="img/bart.png" style="width:100%">
+                    <div class="text">Bart Roos: docent Native, PRA en PRO.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/elton.png" style="width:100%">
+                    <div class="text">Elton Boekhoudt: Docent WEB en PRA</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/ine.png" style="width:100%">
+                    <div class="text">Ine Vermeer: Docent WEB</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/steven.png" style="width:100%">
+                    <div class="text">Steven van Rosendaal: Docent Native, WEB en PRO</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/michel.png" style="width:100%">
+                    <div class="text">Michel Meeuwissen: Docent Rekenen en PRA</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <br>
+
+                <!-- The dots/circles -->
+                
+
+                <script>let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
             </div>
         </div>
         

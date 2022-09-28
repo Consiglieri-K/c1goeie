@@ -200,16 +200,6 @@ main{
   background-image: url("../img/matrix.gif");
   background-color: #24252A;
 }
-.homeItem{
-  max-width: 80%;
-  display: block;
-  margin: auto;
-  padding: 2%;
-}
-
-.homeItem h1{
-  color: #ecd7f2;
-}
 
 .mainItem{
   max-width: 80%;
